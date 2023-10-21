@@ -49,7 +49,7 @@ submit.addEventListener('submit' , async (event) => {
         </div>
         <div class="head2"><p class="temp">TEMP_F: ${item.temp_f}</p>
         <p class="temp">TEMP_C: ${item.temp_c}C</p></div>
-        <div><img src="${item.icon}" alt="icon" width="120px" height="120px"></div>
+        <div><img src="${item.icon}" alt="icon" width="150px" height="150px"></div>
 </div>`
     console.log(item.icon);})
     }

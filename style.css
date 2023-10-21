@@ -8,6 +8,11 @@
     font-weight: 500;
     border: none;
 }
+@media screen and (max-width: 550px) {
+   #text{ 
+    width: 300px;
+   }
+}
 #submit{
     padding: 12px;
     border-radius: 10px;
