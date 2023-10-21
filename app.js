@@ -33,16 +33,22 @@ submit.addEventListener('submit' , async (event) => {
         text.value = ""
 
         array.map((item) =>{
-        div.innerHTML += `<div class="main"><div class="head"><p>COUNTRY: ${item.country}</p>
+        div.innerHTML += 
+        
+        `<div class="main"><div class="head"><p>COUNTRY: ${item.country}</p>
         <p>NAME: ${item.name}</p>
         <p>REGION: ${item.region}</p>
-        <p>TZ_ID: ${item.tz_id}</p></div>
+        <p>LOCALTIME: ${item.localtime}</p>
+        </div><hr class="hr">
+        
+        
         <div class="head1"> 
-        <p>CLOUD: ${item.cloud}</p> 
-        <p>CLOUD: ${item.text}</p> 
-        <p>LOCALTIME: ${item.localtime}</p> </div>
-        <div class="head2"><p>TEMP_F: ${item.temp_f}</p>
-        <p>TEMP_C: ${item.temp_c}</p></div>
+        <p class="para">TZ_ID: ${item.tz_id}</p>
+        <p class="para">CLOUD: ${item.cloud}</p> 
+        <p class="para">CLOUD: ${item.text}</p> 
+        </div>
+        <div class="head2"><p class="temp">TEMP_F: ${item.temp_f}</p>
+        <p class="temp">TEMP_C: ${item.temp_c}C</p></div>
         <div><img src="${item.icon}" alt="icon" width="120px" height="120px"></div>
 </div>`
     console.log(item.icon);})

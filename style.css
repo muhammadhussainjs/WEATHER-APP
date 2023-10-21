@@ -32,12 +32,24 @@ body{
   box-shadow: 5px 5px 50px  #0000009a;
   border-radius: 10px;
   margin-top: 7px;
-  margin-right: 300px;
-  margin-left: 300px;
+  margin-right: 350px;
+  margin-left: 350px;
   flex-wrap: wrap;
   background-color: rgba(39, 90, 207, 0.399);
 
 }
+@media screen and (max-width: 1000px){
+    .main{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+}
+
+
+
+
+
 #loading{
     display: none;
     font-size: x-large;
@@ -56,12 +68,23 @@ body{
     justify-content: space-evenly;
 }
 p{
-    font-size: 1.3rem;
+    font-size: 0.9rem;
 }
 h2{
     text-align: center;
 }
-
+.para{
+    font-size: 1.1rem;
+}
+.hr{
+    margin-bottom: 7px;
+}
+.temp{
+    font-size: 1.3rem;
+}
+#maindiv{
+    margin-top: 25px;
+}
 
 
 
