@@ -52,9 +52,6 @@ body{
 }
 
 
-
-
-
 #loading{
     display: none;
     font-size: x-large;
@@ -67,10 +64,12 @@ body{
 .head1{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .head2{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 p{
     font-size: 0.9rem;

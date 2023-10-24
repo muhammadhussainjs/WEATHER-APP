@@ -31,14 +31,11 @@ submit.addEventListener('submit' , async (event) => {
 
         array.unshift(obj)
         text.value = ""
-
-        array.map((item) =>{
-        div.innerHTML += 
-        
-        `<div class="main"><div class="head"><p>COUNTRY: ${item.country}</p>
-        <p>NAME: ${item.name}</p>
-        <p>REGION: ${item.region}</p>
-        <p>LOCALTIME: ${item.localtime}</p>
+array.map((item) =>{
+        div.innerHTML +=         
+        `<div class="main"><div class="head">
+        <p> ${item.country} ,${item.region} , ${item.name}</p>
+        <p>${item.localtime}</p>
         </div><hr class="hr">
         
         
@@ -51,7 +48,8 @@ submit.addEventListener('submit' , async (event) => {
         <p class="temp">TEMP_C: ${item.temp_c}C</p></div>
         <div><img src="${item.icon}" alt="icon" width="150px" height="150px"></div>
 </div>`
-    console.log(item.icon);})
+    console.log(item.icon);
+})
     }
      
     
